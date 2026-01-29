@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Finance Ledger</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+  <div class="topbar">
+    <h1>PERSONAL FINANCE LEDGER</h1>
+    <span>PERSONAL FINANCE AND BUDGETING SYSTEM</span>
+  </div>
+
+  <div class="main">
+
+    <div class="control">
+      <h2>NEW EXPENSE ENTRY</h2>
+
+      <label>Description</label>
+      <input id="descriptionInput">
+
+      <label>Amount</label>
+      <input id="amountInput" type="number">
+
+      <label>Category</label>
+      <select id="categoryInput">
+        <option>Food</option>
+        <option>Transport</option>
+        <option>Bills</option>
+        <option>Shopping</option>
+        <option>Other</option>
+      </select>
+
+      <button id="addButton">ADD EXPENSE</button>
+      <button id="clearAllButton" class="danger">CLEAR ALL</button>
+    </div>
+
+    <div class="ledger">
+      <div class="stats">
+        <div class="stat">
+          <span>TOTAL SPENT</span>
+          <h2 id="totalSpent">₹0</h2>
+        </div>
+        <div class="stat">
+          <span>TOTAL ENTRIES</span>
+          <h2 id="entryCount">0</h2>
+        </div>
+      </div>
+
+      <div id="ledgerRows"></div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
